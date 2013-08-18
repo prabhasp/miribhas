@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title> Miriam and Prabhas are getting hitched! </title>
+  <style>
+    html { 
+      background: url(tree-outline.png) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
+      background-color: #d5cb96;
+      font-family: Futura;
+    }
+    @font-face {
+      font-family: nouveau;
+      src: local(nouveau), url('Hill House.ttf') format('opentype');
+    }
+    .teal {
+      color: #0dbb8f;
+    }
+    .nouveau {
+      font-family: nouveau;
+    }
+    .vertical-space {
+      margin: 120px;
+    }
+    .cube      { width:450px; height:350px; display: block; margin-left: auto; margin-right: auto;}
+  </style>
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+<div class="vertical-space"/>
+<div class="nouveau"> 
+<span style="font-size:36px;"> MIRIAM <span style="color:#0dbb8f">&</span> PRABHAS  </span> 
+</div>
+<br/>
+<a href="index.html"> HOME </a> | <a href="hotel.html"> HOTEL </a> | <a href="registry.html"> REGISTRY </a> | <a href="map.html"> MAP </a>
+<br/>
+<br/>
+<div id="map" class="cube"></div>
+<script> 
+var map = L.mapbox.map('map', 'examples.map-20v6611k')
+    .setView([40.12, -75], 10);
+L.mapbox.markerLayer(
+        {
+            "type": "FeatureCollection",
+            "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="https://maps.google.com/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=Graeme+Park,+859+W+County+Line+Rd,+Horsham,+PA+19044&geocode=CYvwjYxI9zbaFW6nZQId1kmF-yF6IHCoXSxWCA&gl=US&hl=en-US">Graeme Park</a>',
+                    description: 'American Wedding and Outdoor Reception Venue, Sunday October 6th.',
+                    'marker-size': 'large',
+                    'marker-color': '#1c9'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -75.15, 40.22]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="https://maps.google.com/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=BAPS+Shri+Swaminarayan+Mandir,+1561+Woodbourne+Rd,+Levittown,+PA+19057&geocode=Cd5GZM80agONFdLUZAIdTZaJ-yHUMV10BcZuAA&gl=US&hl=en-US">BAPS Shree Swaminarayan Mandir</a>',
+                    description: "Nepali Wedding Venue, Saturday October 5th",
+                    'marker-size': 'large',
+                    'marker-color': '#f00'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -74.87, 40.16 ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=148">Trenton Transit Center</a>',
+                    description: "NJ Transit has several daily trains from New York.",
+                    'marker-color': '#888'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -74.76, 40.21 ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="http://www.amtrak.com/servlet/ContentServer?pagename=am/am2Station/Station_Page&code=PHL">Philly 30th street station</a>',
+                    description: "Where amtrak trains (for ex. from DC) will come in.",
+                    'marker-color': '#888'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -75.18, 39.96 ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="https://maps.google.com/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=Residence+Inn+Philadelphia+Willow+Grove,+3+Walnut+Grove+Dr,+Horsham,+PA+19044&geocode=CTfPD0SV9eHTFTLoZAIdCGyF-yFGGbT3V7Zdtw&gl=US&hl=en">Residence Inn by Mariott</a>',
+                    description: 'Hotel #2 with blocked rooms. Reserve <a href="http://www.marriott.com/hotels/travel/phlrw?groupCode=wpwwpwa&app=resvlink&fromDate=10/03/013&toDate=10/07/013">Studio with One Bed ($159/night)</a>.',
+                    'marker-color': '#888'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -75.14, 40.16 ]
+                }
+            },
+            {
+                "type": "Feature",
+                "properties": {
+                    title: '<a href="https://maps.google.com/maps?expflags=enable_star_based_justifications:true&ie=UTF8&f=d&daddr=SpringHill+Suites+Philadelphia+Willow+Grove,+2480+Maryland+Rd,+Willow+Grove,+PA+19090&geocode=CRe0dZhbEOa8FSrRZAIdLZWF-yFBIQEBMuq3tA&gl=US&hl=en">Spring Hill Suites by Mariott</a>',
+                    description: 'Hotel #1 with blocked rooms. Reserve <a href="http://www.marriott.com/hotels/travel/phlwl?groupCode=wpwwpwa&app=resvlink&fromDate=10/03/013&toDate=10/07/013">One King Bed ($109/night)</a> or <a href="http://www.marriott.com/hotels/travel/phlwl?groupCode=wpwwpwb&app=resvlink&fromDate=10/03/013&toDate=10/07/013">Two Double Beds ($119/night)</a>',
+                    'marker-color': '#888'
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [ -75.13, 40.16 ]
+                }
+            }
+            ]
+        })
+    .addTo(map);
+</script>
+
+Click on the heading to get re-directed to google maps.
+</body>
+<html>
+
